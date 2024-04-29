@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.lapin"
+             Title="lapin">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="l"
+           Text="الصفحة رقم :0"
+           TranslationX="350"
+           TranslationY="475"
+           TextColor="Black"
+           FontSize="17"/>
+
+        <Image
+        x:Name="safha"
+       Source="C:\Users\HP\source\repos\MauiApp3\MauiApp3\Resources\Images\arnab (1).jpg"
+         WidthRequest="350"
+         HeightRequest="450"/>
+
+        <Button
+     x:Name="strta"
+     Text="البداية"
+     WidthRequest="160"
+     HeightRequest="35"
+     BackgroundColor="Yellow"
+     TranslationX="85"
+     TranslationY="28"
+     Clicked="strta_Clickd"/>
+
+        <Button
+     x:Name="NewPag1"
+     Text="الصفحة الرئيسية"
+     TextColor="White"
+     WidthRequest="160"
+     HeightRequest="35"
+     BackgroundColor="Yellow"
+     TranslationX="-85"
+     TranslationY="-15"
+     Clicked="NewPag1_Clicked"/>
+
+        <Button
+    x:Name="next"
+    Text="--))"
+    TextColor="White"
+    BackgroundColor="Blue"
+    WidthRequest="45"
+    HeightRequest="525"
+    TranslationX="200"
+    TranslationY="-540"
+    Clicked="next_Clicked"/>
+        
+        <Button
+    x:Name="pres"
+    Text="((---"
+    TextColor="White"
+    BackgroundColor="#FF0000FF"
+    WidthRequest="45"
+    HeightRequest="525"
+    TranslationX="-200"
+    TranslationY="-1065"
+    Clicked="pres_Clicked"
+    IsEnabled="False"/>
+
+    </VerticalStackLayout>
+</ContentPage>
