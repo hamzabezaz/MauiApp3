@@ -25,17 +25,39 @@ public partial class lafourmil : ContentPage
 
     private void NewPag1_Clicked(object sender, EventArgs e)
     {
-
+        NewPag1.Navigation.PushAsync(new NewPage1());
     }
 
     private void next_Clicked(object sender, EventArgs e)
     {
-
+        pres.IsEnabled = true;
+        if (count < 9)
+        {
+            count++;
+            Updatecount();
+            safha.Source = "C:\\Users\\HP\\source\\repos\\MauiApp3\\MauiApp3\\Resources\\Images\\namla ("+count+").jpg";
+        }
+        else
+        {
+            next.IsEnabled = false;
+            l.Text = "??????? ???? ???:9";
+        }
     }
 
     private void pres_Clicked(object sender, EventArgs e)
     {
-
+        next.IsEnabled = true;
+        if (count > 1)
+        {
+            count--;
+            Updatecount();
+            safha.Source = "C:\\Users\\HP\\source\\repos\\MauiApp3\\MauiApp3\\Resources\\Images\\namla (" + count + ").jpg";
+        }
+        else
+        {
+            safha.Source = "C:\\Users\\HP\\source\\repos\\MauiApp3\\MauiApp3\\Resources\\Images\\namla (1).jpg";
+            pres.IsEnabled = false;
+        }
     }
     private void Updatecount()
     {

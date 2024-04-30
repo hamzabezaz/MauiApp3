@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp3.lapin"
-             Title="lapin">
+             Title="الأرنب والسلحفاة">
     <VerticalStackLayout>
         <Label 
             x:Name="l"
@@ -14,7 +14,7 @@
 
         <Image
         x:Name="safha"
-       Source="C:\Users\HP\source\repos\MauiApp3\MauiApp3\Resources\Images\arnab (1).jpg"
+       Source="C:\Users\HP\source\repos\MauiApp3\MauiApp3\Resources\Images\arnab (0).jpg"
          WidthRequest="350"
          HeightRequest="450"/>
 
@@ -23,7 +23,7 @@
      Text="البداية"
      WidthRequest="160"
      HeightRequest="35"
-     BackgroundColor="Yellow"
+     BackgroundColor="Red"
      TranslationX="85"
      TranslationY="28"
      Clicked="strta_Clickd"/>
@@ -34,7 +34,7 @@
      TextColor="White"
      WidthRequest="160"
      HeightRequest="35"
-     BackgroundColor="Yellow"
+     BackgroundColor="Red"
      TranslationX="-85"
      TranslationY="-15"
      Clicked="NewPag1_Clicked"/>
@@ -42,7 +42,7 @@
         <Button
     x:Name="next"
     Text="--))"
-    TextColor="White"
+    TextColor="Black"
     BackgroundColor="Blue"
     WidthRequest="45"
     HeightRequest="525"
@@ -53,7 +53,7 @@
         <Button
     x:Name="pres"
     Text="((---"
-    TextColor="White"
+    TextColor="Black"
     BackgroundColor="#FF0000FF"
     WidthRequest="45"
     HeightRequest="525"

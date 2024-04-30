@@ -2,18 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp3.lafourmil"
-             Title="lafourmil">
+             Title="النملة و الصرصور">
     <VerticalStackLayout>
-        <Image Source="C:\Users\HP\source\repos\MauiApp3\MauiApp3\Resources\Images\namla (1).jpg"
-               HeightRequest="550"
-               WidthRequest="350"
-               />
+        
         <Label     
          x:Name="l"
         Text="الصفحة رقم :0"
         TranslationX="350"
         TranslationY="475"
-        TextColor="White"
+        TextColor="Black"
         FontSize="17"/>
             <Image
      x:Name="safha"
@@ -26,17 +23,17 @@
      Text="البداية"
      WidthRequest="160"
      HeightRequest="35"
-     BackgroundColor="Yellow"
+     BackgroundColor="Red"
      TranslationX="85"
      TranslationY="28"
      Clicked="strt_Clickd"/>
             <Button
      x:Name="NewPag1"
      Text="الصفحة الرئيسية"
-     TextColor="White"
+     TextColor="Black"
      WidthRequest="160"
      HeightRequest="35"
-     BackgroundColor="Yellow"
+     BackgroundColor="Red"
      TranslationX="-85"
      TranslationY="-15"
      Clicked="NewPag1_Clicked"/>
@@ -54,7 +51,7 @@
      x:Name="pres"
      Text="((---"
      TextColor="White"
-     BackgroundColor="#FF0000FF"
+     BackgroundColor="Blue"
      WidthRequest="45"
      HeightRequest="525"
      TranslationX="-200"

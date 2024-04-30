@@ -15,13 +15,13 @@ public partial class lapin : ContentPage
         {
             count = 1;
             Updatecount();
-            safha.Source = "C:\\Users\\HP\\source\\repos\\MauiApp3\\MauiApp3\\Resources\\Images\\arnab (2).jpg";
+            safha.Source = "C:\\Users\\HP\\source\\repos\\MauiApp3\\MauiApp3\\Resources\\Images\\arnab (1).jpg";
         }
         else
         {
             count = 0;
             Updatecount();
-            safha.Source = "C:\\Users\\HP\\source\\repos\\MauiApp3\\MauiApp3\\Resources\\Images\\arnab (1).jpg";
+            safha.Source = "C:\\Users\\HP\\source\\repos\\MauiApp3\\MauiApp3\\Resources\\Images\\arnab (0).jpg";
         }
     }
 
@@ -33,7 +33,7 @@ public partial class lapin : ContentPage
     private void next_Clicked(object sender, EventArgs e)
     {
         pres.IsEnabled = true;
-        if (count < 26)
+        if (count < 13)
         {
             count++;
             Updatecount();
@@ -42,14 +42,14 @@ public partial class lapin : ContentPage
         else
         {
             next.IsEnabled = false;
-            l.Text = "??? ?????? ?? :26";
+            l.Text = "??? ?????? ?? :13";
         }
     }
 
     private void pres_Clicked(object sender, EventArgs e)
     {
         next.IsEnabled = true;
-        if (count > 0)
+        if (count > 1)
         {
             count--;
             Updatecount();
